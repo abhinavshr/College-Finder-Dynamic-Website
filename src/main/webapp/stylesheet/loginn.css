@@ -1,0 +1,72 @@
+@charset "ISO-8859-1";
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: linear-gradient(to right, #00A8E8, #F4FBFD);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  width: 400px;
+  height: 300px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FF0000;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #012641; /* changed color */
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #012641; /* changed color */
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+  color: #012641; /* changed color */
+}
+
+button {
+  background-color: #60B3D1; /* changed color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4591B5; /* changed color */
+}

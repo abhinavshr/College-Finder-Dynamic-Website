@@ -1,0 +1,105 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4fbfd;
+}
+
+header {
+  background-color: #60b3d1;
+  color: #f4fbfd;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+section#college-list {
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+}
+
+.college {
+  background-color: #60b3d1;
+  color: #f4fbfd;
+  flex-basis: calc(50% - 10px);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+}
+
+.college:nth-child(2n) {
+  margin-right: 0;
+}
+
+.college h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.college p {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.college img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* Added max-width property */
+  max-width: 200px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.review-form label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4fbfd;
+  font-size: 1rem;
+}
+
+.review-form textarea {
+  height: 100px;
+}
+
+.review-form button {
+  align-self: flex-end;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #012641;
+  color: #f4fbfd;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.review-form button:hover {
+  background-color: #001a33;
+}

@@ -1,0 +1,46 @@
+#header {
+  background: linear-gradient(to bottom, #F4FBFD 0%, #60B3D1 50%, #012641 100%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin-right: 1rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header form input[type="submit"] {
+  background-color: #012641;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+header form input[type="submit"]:hover {
+  background-color: #60B3D1;
+}

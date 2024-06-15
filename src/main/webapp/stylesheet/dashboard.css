@@ -1,0 +1,85 @@
+body {
+  background-color: #F4FBFD;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #012641;
+  text-align: center;
+}
+
+#college-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#college-table th, #college-table td {
+  border: 1px solid #012641;
+  padding: 8px;
+  text-align: left;
+}
+
+#college-table th {
+  background-color: #60B3D1;
+  color: #F4FBFD;
+}
+
+#college-table tr:nth-child(even) {
+  background-color: #E6F7FF;
+}
+
+#college-table tr:hover {
+  background-color: #D6EAF8;
+}
+
+#college-table a {
+  color: #012641;
+  text-decoration: none;
+}
+
+#college-table a:hover {
+  color: #60B3D1;
+}
+
+#college-table img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+button {
+  background-color: #60B3D1;
+  border: none;
+  color: #F4FBFD;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #4CAF50;
+}
+
+input[type="submit"] {
+  background-color: #60B3D1;
+  border: none;
+  color: #F4FBFD;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4CAF50;
+}

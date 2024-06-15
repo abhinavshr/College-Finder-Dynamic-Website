@@ -1,0 +1,37 @@
+package controller.servlet.redirections;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import controllerr.database.connectdb;
+import model.modelAdmin;
+
+/**
+ * Servlet implementation class RedirectionServlet
+ */
+@WebServlet(asyncSupported = true, urlPatterns =  "/pages/panel.jsp")
+public class RedirectionServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	connectdb cn = new connectdb();
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("servlet invoked ----------------------------");
+		ArrayList<modelAdmin> dataList;
+		try {
+			dataList = cn.getDataFromDatabase();
+			request.setAttribute("dataList", dataList);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			request.setAttribute("error", "Class Not FOund error");
+			}
+		request.getRequestDispatcher("/panel").forward(request, response);
+	}
+
+}

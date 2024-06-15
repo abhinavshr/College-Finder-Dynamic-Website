@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h2, h3, a {
+	color: #012641;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	background-color: #012641;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+header img {
+	max-width: 100px;
+	height: auto;
+}
+
+.search {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.search-icon {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	font-size: 1.2em;
+	color: #012641;
+}
+
+.search-input {
+	padding: 10px 10px 10px 40px;
+	border: 1px solid #a2a2a2;
+	border-radius: 5px;
+	width: 100%;
+	box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.search-input:focus {
+	outline: none;
+	box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.college-card {
+	width: 100%;
+	margin: 20px auto;
+	border: 1px solid #a2a2a2;
+	border-radius: 5px;
+	box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+	padding: 20px;
+}
+
+.college-card h2 {
+	margin-top: 0;
+}
+
+.college-card p {
+	margin: 0;
+}
+
+.college-card img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+@media (min-width: 769px) {
+   .college-card {
+        width: 50%;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 1025px) {
+   .college-card {
+        width: 33.33%;
+        margin: 20px auto;
+    }
+}
+form {
+  background-color: #60b3d1;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #f4fbfd;
+}
+
+.search-input {
+  max-width: 600px;
+  width: 100%;
+  padding: 10px 40px 10px 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4fbfd;
+  font-size: 1rem;
+  color: #3f3f7f;
+}
+
+.search-input::placeholder {
+  color: #3f3f7f;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #3f3f7f;
+}
